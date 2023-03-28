@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f5f5f5;
+	color: #222;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form {
+	flex-basis: 400px;
+	padding: 20px;
+	background-color: #222;
+	border-radius: 10px;
+	margin-right: 20px;
+	color: #f5f5f5;
+}
+
+.form h2 {
+	margin-bottom: 10px;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.form input,
+.form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.form input:focus,
+.form textarea:focus {
+	outline: none;
+}
+
+.form button {
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #2ecc71;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+	background-color: #27ae60;
+}
+
+.tasks {
+	flex-basis: 400px;
+	padding: 20px;
+	background-color: #222;
+	border-radius: 10px;
+	color: #f5f5f5;
+}
+
+.tasks h2 {
+	margin-bottom: 10px;
+}
+
+.tasks ul {
+	list-style: none;
+	padding: 0;
+}
+
+.tasks li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #393e46;
+	border-radius: 5px;
+}
+
+.tasks li span {
+	flex: 1;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.tasks li button {
+	background-color: #e74c3c;
+	color: #FFFFFF;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.tasks li button:hover {
+	background-color: #c0392b;
+}
+
+/* color scheme */
+body {
+	color: #f5f5f5;
+	background-color: #393e46;
+}
+
+.form {
+	background-color: #393e46;
+}
+
+.tasks {
+	background-color: #222;
+}
+
+.form button {
+	background-color: #2ecc71;
+}
+
+.form button:hover {
+	background-color: #27ae60;
+}
+
+.tasks li {
+	background-color: #393e46;
+}
+
+.tasks li button {
+	background-color: #e74c3c;
+}
+
+.tasks li button:hover {
+	background-color: #c0392b;
+}
+
+.tasks li.done {
+	background-color: #2ecc71;
+	color: #f5f5f5;
+	text-decoration: line-through;
+}
